@@ -14,6 +14,7 @@ export default function Navbar() {
   const contactHref = (isHome || isGallery) ? "#kontakt" : "/#kontakt";
 
   const navLinks = [
+    { name: "Home", href: "/", isExternal: false },
     { name: "Galerie", href: "/galerie", isExternal: false },
     { name: "Anfrage", href: contactHref, isExternal: true },
   ];
@@ -59,6 +60,24 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Menu Button - Floating */}
+      <div className="md:hidden fixed top-4 left-4 z-[100]">
+        <Link to="/" aria-label="Zur Startseite">
+          <img
+            src={logo}
+            alt="Amelie Artstudio Logo"
+            className="h-12 w-auto object-contain"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              const textLogo = document.createElement('span');
+              textLogo.className = "text-xl font-serif font-medium italic tracking-widest text-black";
+              textLogo.innerText = "Amelie Artstudio.";
+              e.currentTarget.parentElement?.appendChild(textLogo);
+            }}
+          />
+        </Link>
+      </div>
+
       <button
         className="md:hidden fixed top-4 right-4 z-[100] bg-white/80 backdrop-blur-md rounded-full h-12 w-12 flex items-center justify-center shadow-lg text-black"
         onClick={() => setIsOpen(!isOpen)}

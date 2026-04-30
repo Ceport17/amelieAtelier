@@ -209,7 +209,7 @@ export default function Gallery() {
     <div className="min-h-screen bg-white">
       {/* 1. Header / Einstieg - Refined Hero with Overlap */}
       <header 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-48 pb-16 md:pb-32"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-0 md:pt-0 pb-16 md:pb-32"
         style={{ 
           background: 'radial-gradient(ellipse at 100% 45%, #7E9F83 0%, transparent 45%), #FFF9F3' 
         }}

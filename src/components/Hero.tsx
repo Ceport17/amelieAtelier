@@ -45,9 +45,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-        className="w-full md:w-2/5 flex flex-col items-start"
+        className="w-full md:w-2/5 flex flex-col items-start mt-[-3rem] md:mt-0"
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl leading-tight mb-8 text-mauve font-nunito font-normal">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl leading-tight mb-2 md:mb-8 text-mauve font-nunito font-normal">
           Stille <br />
           <span className="italic">Struktur.</span>
         </h1>
