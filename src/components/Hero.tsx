@@ -13,18 +13,18 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], [0, 150]);
 
   return (
-  <section ref={containerRef} className="relative min-h-screen flex flex-col md:flex-row items-center justify-center pt-16 md:pt-0 pb-20 px-8 md:px-16 gap-16 md:gap-24 lg:gap-32 overflow-hidden hero-gradient">      {/* Portrait Image with subtle Parallax */}
+  <section ref={containerRef} className="relative isolate min-h-screen flex flex-col md:flex-row items-center justify-center pt-16 md:pt-0 pb-20 px-8 md:px-16 gap-16 md:gap-24 lg:gap-32 overflow-hidden hero-gradient">      {/* Portrait Image with subtle Parallax */}
       <motion.div 
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
-        className="w-full md:w-1/2 flex justify-center md:justify-end"
+        className="relative z-10 w-full md:w-1/2 flex justify-center md:justify-end"
       >
         <div 
           className="relative w-full max-w-[360px] md:max-w-[480px] lg:max-w-[560px] aspect-[4/5] overflow-hidden shadow-[0_40px_80px_-15px_rgba(0,0,0,0.3)]"
           style={{
-            maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent), linear-gradient(to bottom, transparent, black 3%, black 75%, transparent)',
-            WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent), linear-gradient(to bottom, transparent, black 3%, black 75%, transparent)',
+            maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent), linear-gradient(to bottom, transparent, black 3%, black 85%, transparent)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent), linear-gradient(to bottom, transparent, black 3%, black 85%, transparent)',
             maskComposite: 'intersect',
             WebkitMaskComposite: 'source-in'
           }}
@@ -45,7 +45,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-        className="w-full md:w-2/5 flex flex-col items-start mt-[-3rem] md:mt-0"
+        className="relative z-10 w-full md:w-2/5 flex flex-col items-start mt-[-3rem] md:mt-0"
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl leading-tight mb-2 md:mb-8 text-mauve font-nunito font-normal">
           Stille <br />
@@ -65,7 +65,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Background Decorative Element */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 z-0 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
     </section>
   );
 }

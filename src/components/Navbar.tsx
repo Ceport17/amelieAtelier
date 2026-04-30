@@ -60,7 +60,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Menu Button - Floating */}
-      <div className="md:hidden fixed top-4 left-4 z-[100]">
+      <div className="md:hidden absolute top-4 left-4 z-[100]">
         <Link to="/" aria-label="Zur Startseite">
           <img
             src={logo}
