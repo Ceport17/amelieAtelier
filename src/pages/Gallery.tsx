@@ -255,7 +255,7 @@ export default function Gallery() {
                   transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
                   className="max-w-full md:max-w-3xl lg:max-w-5xl"
                 >
-                  <h1 className="text-4xl md:text-6xl lg:text-8xl leading-[1.05] text-mauve font-nunito font-normal uppercase tracking-tighter drop-shadow-sm flex flex-col items-start">
+                  <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-8xl leading-[1.05] text-mauve font-nunito font-normal uppercase tracking-tighter drop-shadow-sm flex flex-col items-start">
                     <span className="block">Meine</span>
                     <span className="block ml-16 md:ml-32 lg:ml-48">Galerie</span>
                     <span className="block ml-8 md:ml-16 lg:ml-24">für dein</span>
