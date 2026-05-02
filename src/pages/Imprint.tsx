@@ -31,7 +31,7 @@ export default function Imprint() {
             <section>
               <h2 className="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-medium mb-4">Kontakt</h2>
               <p className="text-lg">
-                E-Mail: <a href="mailto:amelie-artstudio@web.de" className="text-mauve hover:opacity-80 transition-opacity underline underline-offset-4 decoration-salbei/30">amelie-artstudio@web.de</a>
+                E-Mail: <a href="mailto:amelie.artstudio@web.de" className="text-mauve hover:opacity-80 transition-opacity underline underline-offset-4 decoration-salbei/30">amelie.artstudio@web.de</a>
               </p>
             </section>
 
@@ -43,9 +43,6 @@ export default function Imprint() {
             </section>
 
             <div className="pt-12 border-t border-gray-200">
-              <p className="text-xs uppercase tracking-widest text-gray-400">
-                Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="hover:text-mauve transition-colors">e-recht24.de</a>
-              </p>
             </div>
           </div>
         </motion.div>
