@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div>
             <span className="block text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-4 font-medium">Anfrage</span>
-            <a href="mailto:amelie-artstudio@web.de" className="text-sm text-gray-600 hover:text-mauve transition-colors">amelie-artstudio@web.de</a>
+            <a href="mailto:amelie.artstudio@web.de" className="text-sm text-gray-600 hover:text-mauve transition-colors">amelie.artstudio@web.de</a>
           </div>
           <div>
             <span className="block text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-4 font-medium">Folgen</span>
