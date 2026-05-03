@@ -47,13 +47,13 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
         className="relative z-10 w-full md:w-2/5 flex flex-col items-start mt-[-3rem] md:mt-0"
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.12] mb-2 md:mb-8 text-mauve font-nunito font-normal max-w-[13ch] md:max-w-none">
-          Amelie Wrage <br />
-          <span className="italic">Strukturkunst.</span>
+        <h1 className="max-w-[14ch] md:max-w-none leading-[1.22] md:leading-[1.28] mb-2 md:mb-8 text-mauve font-nunito font-normal flex flex-col items-start">
+          <span className="whitespace-nowrap text-[2.05rem] sm:text-[2.45rem] md:text-[2.75rem] lg:text-[3.2rem] leading-[1.12] md:leading-[1.08]">Amelie Wrage</span>
+          <span className="text-[2.15rem] sm:text-[2.55rem] md:text-[3.55rem] lg:text-[4rem] leading-[1.08] md:leading-[1.02] italic mt-1 md:mt-0">Strukturkunst.</span>
         </h1>
         <motion.div 
           whileTap={{ scale: 0.98 }}
-          className="w-full md:w-auto"
+          className="w-full md:w-auto mt-4 md:mt-0"
         >
           <Link 
             to="/galerie" 
