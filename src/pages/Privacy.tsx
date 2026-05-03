@@ -160,8 +160,8 @@ export default function Privacy() {
                     Amelie Wrage<br />
                     Sandberg 4-6<br />
                     25335 Elmshorn<br />
-                    Telefon: [Telefonnummer]<br />
-                    E-Mail: <a href="mailto:amelie-artstudio@web.de" className="text-mauve hover:opacity-80 transition-opacity underline underline-offset-4 decoration-salbei/30">amelie-artstudio@web.de</a>
+                    Telefon: 0172-4894430<br />
+                    E-Mail: <a href="mailto:amelie.artstudio@web.de" className="text-mauve hover:opacity-80 transition-opacity underline underline-offset-4 decoration-salbei/30">amelie.artstudio@web.de</a>
                   </p>
                   <p className="text-lg mt-4 font-light italic">
                     Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über

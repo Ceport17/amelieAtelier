@@ -154,7 +154,7 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 15,
-    title: "mountain Magic",
+    title: "Mountain Magic",
     year: "2026",
     material: "Gips auf Leinwand",
     image: bergeHocker,

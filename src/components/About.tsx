@@ -53,7 +53,7 @@ export default function About() {
           <h2 className="text-2xl md:text-3xl uppercase tracking-[0.5em] mb-10 text-mauve text-center font-light">ÜBER MICH.</h2>
           <div className="w-12 h-[1px] bg-salbei mx-auto mb-10"></div>
           <p className="text-gray-500 leading-relaxed mb-16 text-lg md:text-xl text-center font-light max-w-2xl mx-auto">
-            Ich bin Amelie, eine Künstlerin aus dem Norden Deutschlands. 
+            Ich bin Amelie, eine Künstlerin aus Elmshorn. 
             Durch mein Interior Design Studium habe ich gemerkt, wie sehr Oberflächen verändern, wie wir uns in einem Raum fühlen. 
             Deshalb stecken in jedem meiner Stücke viel Detailarbeit und echtes Handwerk.
           </p>

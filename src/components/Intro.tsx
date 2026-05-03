@@ -35,8 +35,8 @@ export default function Intro() {
             referrerPolicy="no-referrer"
           />
           <h2 className="text-3xl md:text-5xl lg:text-6xl mb-10 leading-[1.1] text-mauve uppercase tracking-[0.2em] font-light">
-            Moderne <br className="md:hidden" />
-            Texturen <br />
+            Sruktur <br className="md:hidden" />
+            Kunst <br />
             für deine <br className="hidden lg:block" /> Räume.
           </h2>
           <div className="w-12 h-[1px] bg-salbei mb-10"></div>

@@ -47,9 +47,9 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
         className="relative z-10 w-full md:w-2/5 flex flex-col items-start mt-[-3rem] md:mt-0"
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl leading-tight mb-2 md:mb-8 text-mauve font-nunito font-normal">
-          Stille <br />
-          <span className="italic">Struktur.</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.12] mb-2 md:mb-8 text-mauve font-nunito font-normal max-w-[13ch] md:max-w-none">
+          Amelie Wrage <br />
+          <span className="italic">Strukturkunst.</span>
         </h1>
         <motion.div 
           whileTap={{ scale: 0.98 }}
