@@ -23,7 +23,7 @@ export default function Privacy() {
               <h2 className="text-xl text-mauve mb-6 font-normal uppercase tracking-wider">1. Allgemeine Hinweise</h2>
               <div className="space-y-6">
                 <p className="text-lg">
-                  Der Schutz Deiner persönlichen Daten ist uns wichtig. Personenbezogene Daten werden auf dieser Website
+                  Der Schutz Deiner persönlichen Daten ist mir wichtig. Personenbezogene Daten werden auf dieser Website
                   nur im notwendigen Umfang verarbeitet.
                 </p>
                 <p className="text-lg">
@@ -61,7 +61,7 @@ export default function Privacy() {
               <h2 className="text-xl text-mauve mb-6 font-normal uppercase tracking-wider">3. Kontaktformular</h2>
               <div className="space-y-6">
                 <p className="text-lg">
-                  Wenn Du uns über das Kontaktformular kontaktierst, werden Deine Angaben zur Bearbeitung Deiner Anfrage
+                  Wenn Du mich über das Kontaktformular kontaktierst, werden Deine Angaben zur Bearbeitung Deiner Anfrage
                   verarbeitet.
                 </p>
                 <p className="text-lg">
@@ -73,7 +73,7 @@ export default function Privacy() {
             <section>
               <h2 className="text-xl text-mauve mb-6 font-normal uppercase tracking-wider">4. Formspree</h2>
               <div className="space-y-6">
-                <p className="text-lg">Für das Kontaktformular nutzen wir den Dienst Formspree.</p>
+                <p className="text-lg">Für das Kontaktformular nutze ich den Dienst Formspree.</p>
                 <p className="text-lg">
                   Anbieter:<br />
                   Formspree Inc.<br />
@@ -98,7 +98,7 @@ export default function Privacy() {
               <h2 className="text-xl text-mauve mb-6 font-normal uppercase tracking-wider">5. Cloudflare Turnstile</h2>
               <div className="space-y-6">
                 <p className="text-lg">
-                  Zum Schutz vor Spam verwenden wir Cloudflare Turnstile.
+                  Zum Schutz vor Spam verwende ich Cloudflare Turnstile.
                 </p>
                 <p className="text-lg">
                   Anbieter:<br />
@@ -138,7 +138,7 @@ export default function Privacy() {
                   <li>Widerruf erteilter Einwilligungen</li>
                   <li>Beschwerde bei einer Datenschutzaufsichtsbehörde</li>
                 </ul>
-                <p className="text-lg">Bei Fragen zum Datenschutz kannst Du Dich jederzeit an uns wenden.</p>
+                <p className="text-lg">Bei Fragen zum Datenschutz kannst Du Dich jederzeit an mich wenden.</p>
               </div>
             </section>
           </div>

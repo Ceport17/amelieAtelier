@@ -42,7 +42,7 @@ export default function Imprint() {
             <section>
               <h2 className="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-medium mb-4">Verbraucherstreitbeilegung</h2>
               <p className="text-lg">
-                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
               </p>
             </section>
 
