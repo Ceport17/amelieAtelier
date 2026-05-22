@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /impressum
+Disallow: /datenschutz
+
+Sitemap: https://amelie-artstudio.de/sitemap.xml

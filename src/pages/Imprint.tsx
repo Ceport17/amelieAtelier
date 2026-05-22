@@ -10,7 +10,7 @@ export default function Imprint() {
   return (
     <main className="pt-32 pb-24 px-6 md:px-16 bg-creme min-h-screen">
       <Helmet>
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="noindex,follow" />
       </Helmet>
       <div className="max-w-3xl mx-auto">
         <motion.div

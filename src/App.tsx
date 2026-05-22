@@ -17,6 +17,7 @@ import Gallery from "./pages/Gallery";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 import ScrollToTopButton from "./components/ScrollToTop";
+import { Helmet } from "react-helmet-async";
 
 function useScrollToTop() {
   const { pathname } = useLocation();
@@ -28,6 +29,9 @@ function useScrollToTop() {
 function Home() {
   return (
     <main>
+      <Helmet>
+        <meta name="robots" content="index,follow" />
+      </Helmet>
       <Hero />
       <Intro />
       <SelectedWorks />
@@ -46,7 +50,7 @@ function AppInner() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/galerie" element={<Gallery />} />
+        <Route path="/galerie" element={<><Helmet><meta name="robots" content="index,follow" /></Helmet><Gallery /></>} />
         <Route path="/kontakt" element={<div className="pt-32 px-16 min-h-screen">Anfrage (In Arbeit)</div>} />
         <Route path="/impressum" element={<Imprint />} />
         <Route path="/datenschutz" element={<Privacy />} />
