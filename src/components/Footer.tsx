@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
       
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-gray-100 flex justify-between items-center text-[10px] uppercase tracking-[0.3em] text-gray-400 font-medium">
-        <span>© 2026 Amelie Artstudio</span>
+        <span>© 2026 Amelie Artstudio · Webdesign by Celia Rodrigues</span>
         <div className="flex flex-col items-end gap-2 md:flex-row md:gap-4">
           <Link to="/impressum" className="hover:text-mauve transition-colors">Impressum</Link>
           <Link to="/datenschutz" className="hover:text-mauve transition-colors">Datenschutz</Link>
