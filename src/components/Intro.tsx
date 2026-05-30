@@ -14,6 +14,7 @@ export default function Intro() {
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.1, 1, 1.1]);
+  const mainImageScale = 1.18;
 
   return (
     <section ref={containerRef} className="py-32 md:py-48 px-8 md:px-16 bg-white overflow-hidden">
@@ -59,21 +60,21 @@ export default function Intro() {
               maskComposite: 'intersect',
               WebkitMaskComposite: 'source-in'
             }}
-          >
-            <motion.img
-              style={{ scale }}
-              src={mainIntroImg}
-              alt="Atelier Szene"
-              loading="lazy"
-              className="w-full h-full object-cover grayscale-[20%]"
-              referrerPolicy="no-referrer"
-            />
-          </motion.div>
+            >
+              <motion.img
+              style={{ scale: mainImageScale }}
+                src={mainIntroImg}
+                alt="Atelier Szene"
+                loading="lazy"
+                className="w-full h-full object-cover object-[50%_40%] grayscale-[20%]"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
           
           {/* Overlapping Small Image with Mask */}
           <motion.div 
             style={{ y: y2 }}
-            className="absolute -bottom-20 -left-12 md:-left-24 w-3/5 aspect-square shadow-2xl overflow-hidden z-10"
+            className="absolute -bottom-[20px] left-1/2 -translate-x-1/2 md:bottom-[-20px] md:left-auto md:translate-x-0 md:-left-16 w-[34%] md:w-3/5 aspect-square shadow-2xl overflow-hidden z-10"
           >
             <motion.img
               style={{ scale: 1.1 }}

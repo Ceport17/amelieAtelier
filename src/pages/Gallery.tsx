@@ -11,14 +11,13 @@ import img2 from "../components/blume_rot_struktur.webp";
 import img3 from "../components/gelb_quer.webp";
 import img4 from "../components/gruen_berge.webp";
 import img5 from "../components/gruen_rosa_struktur.webp";
-import img6 from "../components/hero_galerie.webp";
-import img7 from "../components/hero_startseite.webp";
+import img6 from "../components/bett_beige.webp";
 import img8 from "../components/quadrat_blume.webp";
-import img9 from "../components/berge_blau_struktur.webp";
+import img9 from "../components/welle_gruen_beige.webp";
 import img10 from "../components/struktur_gruen_rot.webp";
 import img11 from "../components/welle_nah.webp";
 import img12 from "../components/zweiBilder.webp";
-import img13 from "../components/Strand2.webp";
+import img13 from "../components/struktur_weinrot.webp";
 import img14 from "../components/welle_beije.webp";
 import img15 from "../components/welle_hoch.webp";
 import img16 from "../components/struktur_gruen.webp";
@@ -40,7 +39,7 @@ interface ArtWork {
 const galleryData: ArtWork[] = [
   {
     id: 1,
-    title: "nature Layers",
+    title: "Nature Layers",
     year: "2026",
     material: "Gips auf Leinwand",
     image: img4,
@@ -48,7 +47,7 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 2,
-    title: "soft Beige",
+    title: "Soft Beige",
     year: "2026",
     material: "Strukturgips auf Holz",
     image: weissBeige,
@@ -57,23 +56,23 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 3,
-    title: "green-red Field",
-    year: "2026",
-    material: "Gips auf Leinwand",
-    image: img10,
-    aspectRatio: "aspect-[16/10]"
-  },
-  {
-    id: 4,
-    title: "peaceful Mountains",
+    title: "Green Wave",
     year: "2026",
     material: "Gips auf Leinwand",
     image: img9,
-    aspectRatio: "aspect-[3/4]"
+    aspectRatio: "aspect-[4/5]"
+  },
+  {
+    id: 3,
+    title: "Green-Red Field",
+    year: "2026",
+    material: "Gips auf Leinwand",
+    image: img10,
+    aspectRatio: "aspect-[4/5]"
   },
   {
     id: 5,
-    title: "quiet Field",
+    title: "Quiet Field",
     year: "2026",
     material: "Strukturgips auf Holz",
     image: img16,
@@ -81,7 +80,7 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 6,
-    title: "spring Vibes",
+    title: "Spring Vibes",
     year: "2026",
     material: "Gips on Canvas",
     image: img5,
@@ -89,24 +88,25 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 7,
-    title: "Sunshine on canvas",
+    title: "Flour Duo",
     year: "2026",
     material: "Gips auf Leinwand",
-    image: img3,
-    aspectRatio: "aspect-[4/3]"
+    image: blumeStruktur,
+    aspectRatio: "aspect-[4/3]",
+    focalPoint: "50% 30%"
   },
   {
     id: 8,
-    title: "beige Wave",
+    title: "Ocean Wave",
     year: "2025",
     material: "Strukturgips auf Holz",
     image: img6,
     aspectRatio: "aspect-square",
-    focalPoint: "center 0%"
+    focalPoint: "50% 10%"
   },
   {
     id: 9,
-    title: "sandy Beach",
+    title: "Sandy Beach",
     year: "2026",
     material: "Gips auf Leinwand",
     image: img15,
@@ -114,7 +114,7 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 10,
-    title: "blue Ocean",
+    title: "Blue Ocean",
     year: "2026",
     material: "Gips auf Leinwand",
     image: img14,
@@ -122,15 +122,15 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 11,
-    title: "flour Duo",
+    title: "Sunshine on canvas",
     year: "2026",
     material: "Strukturgips auf Holz",
-    image: blumeStruktur,
+    image: img3,
     aspectRatio: "aspect-square"
   },
   {
     id: 12,
-    title: "perfect Duo",
+    title: "Perfect Duo",
     year: "2025",
     material: "Gips auf Leinwand",
     image: img12,
@@ -138,7 +138,7 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 13,
-    title: "Ocean Breeze",
+    title: "Texture Waves",
     year: "2025",
     material: "Strukturgips auf Holz",
     image: img13,
@@ -146,7 +146,7 @@ const galleryData: ArtWork[] = [
   },
   {
     id: 14,
-    title: "red Flour",
+    title: "Red Flour",
     year: "2026",
     material: "Gips auf Leinwand",
     image: img2,
@@ -208,10 +208,10 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-white">
       {/* 1. Header / Einstieg - Refined Hero with Overlap */}
-      <header 
+        <header 
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-0 md:pt-0 pb-16 md:pb-32"
         style={{ 
-          background: 'radial-gradient(ellipse at 100% 45%, #7E9F83 0%, transparent 45%), #FFF9F3' 
+          background: 'radial-gradient(ellipse at 100% 45%, rgba(126,159,131,0.68) 0%, transparent 45%), #FFF9F3' 
         }}
       >
         {/* Wider, Lighter Background Image/Texture */}

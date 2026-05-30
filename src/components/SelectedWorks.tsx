@@ -4,20 +4,18 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown, X } from "lucide-react";
 
 import img1 from "./Strand2.webp";
-import img2 from "./welle_rahmen.webp";
-import img3 from "./quadrat_blume.webp";
 import img4 from "./berge_blau_struktur.webp";
 import img5 from "./gruen_rosa_struktur.webp";
 import img6 from "./struktur_weiss_beige.webp";
 import img7 from "./struktur_gruen.webp";
-import img8 from "./welle_beije.webp";
+import img8 from "./welle_beige.webp";
 import img9 from "./welle_hoch.webp";
 import profileImg from "./amelie_profil.webp";
 
 const works = [
   {
     id: 2,
-    title: "soft Beige",
+    title: "Soft Beige",
     image: img6,
     description: "Mixed Media Structure",
     year: "2024",
@@ -34,9 +32,9 @@ const works = [
     focal: "38%"
   },
   {
-    id: 4,
-    title: "spring Vibes",
-    image: img5,
+    id: 6,
+    title: "Sandy Beach",
+    image: img9,
     description: "Strukturgips auf Holz",
     year: "2024",
     aspect: "aspect-[3/4]",
@@ -44,7 +42,7 @@ const works = [
   },
   {
     id: 3,
-    title: "quiet Field",
+    title: "Quiet Field",
     image: img7,
     description: "Strukturgips auf Holz",
     year: "2023",
@@ -53,7 +51,7 @@ const works = [
   },
   {
     id: 5,
-    title: "peaceful Mountains",
+    title: "Peaceful Mountains",
     image: img4,
     description: "Gips auf Leinwand",
     year: "2024",
@@ -61,9 +59,9 @@ const works = [
     focal: "28%"
   },
   {
-    id: 6,
-    title: "sandy Beach",
-    image: img9,
+    id: 4,
+    title: "Spring Vibes",
+    image: img5,
     description: "Strukturgips auf Holz",
     year: "2024",
     aspect: "aspect-[3/4]",
