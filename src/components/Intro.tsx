@@ -49,7 +49,7 @@ export default function Intro() {
         </motion.div>
 
         {/* Right Image Group */}
-        <div className="w-full md:w-1/2 relative flex justify-end">
+        <div className="w-full md:w-1/2 relative flex justify-center md:justify-start items-end md:items-center pt-10 md:pt-0">
           {/* Main Image with Mask */}
           <motion.div 
             className="w-full md:w-4/5 aspect-[4/5] overflow-hidden bg-creme"
@@ -74,9 +74,13 @@ export default function Intro() {
           {/* Overlapping Small Image with Mask */}
           <motion.div 
             style={{ y: y2 }}
-            className="absolute -bottom-[20px] left-1/2 -translate-x-1/2 md:bottom-[-20px] md:left-auto md:translate-x-0 md:-left-16 w-[34%] md:w-3/5 aspect-square shadow-2xl overflow-hidden z-10"
+            className="absolute -bottom-[5px] left-1/2 -translate-x-1/2 md:bottom-[-12px] md:left-0 md:translate-y-0 md:-translate-x-[18%] w-[40%] md:w-[42%] aspect-square shadow-2xl overflow-hidden z-0 md:z-10"
           >
             <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 1.1, ease: "easeOut" }}
               style={{ scale: 1.1 }}
               src={smallImg}
               alt="Detail Struktur"

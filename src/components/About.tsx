@@ -55,7 +55,7 @@ export default function About() {
           <p className="text-gray-500 leading-relaxed mb-16 text-lg md:text-xl text-center font-light max-w-2xl mx-auto">
             Ich bin Amelie, eine Künstlerin aus Elmshorn. 
             Durch mein Interior Design Studium habe ich gemerkt, wie sehr Oberflächen verändern, wie wir uns in einem Raum fühlen. 
-            Deshalb stecken in jedem meiner Stücke viel Detailarbeit und echtes Handwerk.
+            Deshalb stecken in jeder meiner Leinwände viel Detailarbeit und echtes Handwerk.
           </p>
         </motion.div>
 
