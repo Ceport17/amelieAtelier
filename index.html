@@ -4,44 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload kritische Schriften -->
-    <link rel="preload" href="/src/fonts/Nunito-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin />
-    
-    <!-- Preconnect für externe Ressourcen -->
+    <!-- Performance -->
+    <link
+      rel="preload"
+      href="/src/fonts/Nunito-VariableFont_wght.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Cloudflare Turnstile -->
     <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
 
-    <!-- Titel im Browser-Tab -->
-    <title>Amelie Artstudio</title>
+    <!-- SEO -->
+    <title>Amelie Wrage Kunst | Amelie Artstudio Elmshorn</title>
 
-    <!-- SEO Beschreibung (Google Ergebnis) -->
     <meta
       name="description"
-      content="Amelie Wrage - Kunst aus Struktur und zeitlosen Formen"
+      content="Amelie Artstudio von Amelie Wrage aus Elmshorn. Handgemachte Strukturbilder, individuelle Kunstwerke und kreative Auftragsarbeiten für ein ruhiges und stilvolles Zuhause."
     />
 
-    <!-- Open Graph (für WhatsApp, Instagram, etc.) -->
-    <meta property="og:title" content="Amelie Artstudio" />
+    <meta
+      name="keywords"
+      content="Amelie Wrage, Kunst Elmshorn, Strukturbilder, Strukturkunst, Kunstwerke, Auftragskunst, Leinwandbilder, handgemalte Bilder, Amelie Artstudio"
+    />
+
+    <meta name="author" content="Amelie Wrage" />
+
+    <link rel="canonical" href="https://amelie-artstudio.de/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amelie Wrage Kunst | Amelie Artstudio" />
+
     <meta
       property="og:description"
-      content="Individuelle StrukturBilder und kreative Auftragsarbeiten für dein Zuhause."
+      content="Handgemachte Strukturbilder und individuelle Kunstwerke von Amelie Wrage aus Elmshorn für dein Zuhause."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://amelie-artstudio.de" />
 
-    <!-- Optional: Vorschaubild beim Teilen (empfohlen) -->
-    <!-- <meta property="og:image" content="https://amelie-artstudio.de/preview.jpg" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amelie-artstudio.de/" />
+
+    <!-- Vorschaubild -->
+    <!-- Pfad ggf. anpassen -->
+    <meta property="og:image" content="https://amelie-artstudio.de/og-image.webp" />
 
     <!-- Favicon -->
     <link rel="icon" href="/wellefavicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
     <link rel="apple-touch-icon" sizes="48x48" href="/favicon-48.png" />
+
     <meta name="theme-color" content="#FFF9F3" />
   </head>
 
   <body>
     <div id="root"></div>
 
-    <!-- React App -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
