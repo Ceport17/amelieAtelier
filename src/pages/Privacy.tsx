@@ -33,7 +33,7 @@ export default function Privacy() {
                   Amelie Wrage<br />
                   Sandberg 4-6<br />
                   25335 Elmshorn<br />
-                  E-Mail: <a href="mailto:amelie.artstudio@web.de" className="text-mauve hover:opacity-80 transition-opacity underline underline-offset-4 decoration-salbei/30">amelie.artstudio@web.de</a>
+                  E-Mail: <a href="mailto:hallo@amelie-artstudio.de" className="text-mauve hover:opacity-80 transition-opacity underline underline-offset-4 decoration-salbei/30">hallo@amelie-artstudio.de</a>
                 </p>
               </div>
             </section>
