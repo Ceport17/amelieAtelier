@@ -1,3 +1,41 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access"
+
+  # Short cache for HTML so updates propagate quickly
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # Long cache for images, fonts, JS and CSS
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Serve static assets with long cache and immutable when possible
+  <FilesMatch "\.(?:css|js|png|jpg|jpeg|webp|svg|woff2|woff)$">
+    Header always set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Ensure HTML is always revalidated
+  <FilesMatch "\.(?:html|htm)$">
+    Header always set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Allow cross-origin font loading
+  <FilesMatch "\.(?:woff2|woff)$">
+    Header always set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
